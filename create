@@ -1,0 +1,28 @@
+Developing_Data_Products_Project.R
+
+geethuiyer
+
+Thu Oct 11 17:06:43 2018
+
+## OBJECTIVE
+
+ Create a web page using R Markdown that features a map created with Leaflet.
+
+ Host your webpage on either GitHub Pages, RPubs, or NeoCities.
+
+ Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!
+ #Procedure
+ 
+  library(leaflet)
+
+my_map <- leaflet() %>%
+  addTiles()
+
+
+my_map <- my_map %>%
+  addMarkers(lat=12.9915, lng=80.2169,
+             popup="Pheonix mall Bangalore (Biggest shopping  mall in Bangalore)")
+
+my_map
+
+
